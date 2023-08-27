@@ -1,0 +1,37 @@
+.podcast-card {
+  width: 200px;
+  min-height: 250px;
+  background: linear-gradient(
+    177.7deg,
+    rgba(58, 129, 191, 0.3) 1.63%,
+    rgba(65, 48, 90, 0.009) 148.18%
+  );
+  border-radius: 1rem;
+  padding: 0.5rem;
+  opacity: 0.7;
+  cursor: pointer;
+}
+
+.podcast-card:hover {
+  opacity: 1;
+  transition: all 0.3s;
+}
+.display-img-podcast {
+  width: 100%;
+  object-fit: cover;
+  height: 230px;
+  border-top-left-radius: 0.8rem;
+  border-top-right-radius: 0.8rem;
+}
+a {
+  text-decoration: none;
+}
+.pod-desc {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.title-podcast {
+  color: var(--white);
+  margin: 0.5rem 0rem;
+}

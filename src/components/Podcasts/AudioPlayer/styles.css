@@ -1,0 +1,121 @@
+.custom-audio-player {
+  width: 100%;
+  left: 0;
+  position: sticky;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  background-color: rgb(5, 5, 6);
+  /* background-color: var(--purple-grey); */
+}
+.display-image-player {
+  width: 30px;
+  height: 30px;
+  object-fit: cover;
+}
+.duration-range {
+  filter: hue-rotate(25deg);
+  width: 100%;
+  cursor: pointer;
+  height: 2px;
+}
+.custom-duration {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  width: 50%;
+  height: 10vh;
+  cursor: pointer;
+}
+.duration {
+  font-size: 0.8rem;
+}
+.volume-range {
+  filter: hue-rotate(25deg);
+  width: 20%;
+  cursor: pointer;
+  height: 2px;
+}
+.custom-icons svg {
+  width: 2em;
+  height: 2em;
+  padding-top:3px;
+}
+.SkipPrev > svg,
+.SkipNext > svg {
+  width: 2.5em;
+  height: 1.5em;
+  padding-top:3px;
+}
+
+/* Media Queries */
+@media only screen and (max-width: 768px) {
+  .custom-audio-player {
+    justify-content: center;
+    padding-left: 0.5rem;
+  }
+  .custom-duration {
+    width: 60%;
+    justify-content: flex-start;
+    gap: 0.2rem;
+  }
+  .volume-range {
+    width: 40%;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .custom-audio-player {
+    justify-content: flex-start;
+    padding-left: 0.5rem;
+    gap: 2rem;
+  }
+  .custom-duration {
+    width: 80%;
+    justify-content: flex-start;
+    gap: 0.2rem;
+  }
+  .volume-range {
+    width: 40%;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .custom-audio-player {
+    justify-content: flex-start;
+    padding-left: 0.5rem;
+    gap: 1rem;
+  }
+
+  .display-image-player {
+    width: 30px;
+    height: 30px;
+  }
+  .custom-duration {
+    width: 100%;
+    justify-content: flex-start;
+    gap: 0.2rem;
+  }
+  .duration-range {
+    width: 60%;
+  }
+  .volume-range {
+    width: 30%;
+  }
+  .duration {
+    font-size: 0.6rem;
+  }
+  .custom-icons svg {
+    width: 1em;
+    height: 1em;
+    padding-top: 3px;
+  }
+  .SkipPrev > svg,
+  .SkipNext > svg {
+    width: 1em;
+    height: 1em;
+    padding-top: 3px;
+  }
+}

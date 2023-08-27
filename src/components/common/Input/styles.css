@@ -1,0 +1,26 @@
+.custom-input {
+  background-color: var(--theme);
+  color: var(--white);
+  border: 2px solid var(--purple-grey);
+  border-radius: 0.3rem;
+  padding: 0.5rem;
+  font-size: 1rem;
+  width: 90%;
+  margin: 0.7rem;
+}
+.custom-input:focus {
+  outline: none;
+  border-color: var(--white);
+}
+.custom-input::placeholder {
+  color: var(--purple-grey);
+}
+.label-input {
+  color: var(--purple-grey);
+}
+.active {
+  border-color: var(--white);
+}
+.custom-file-input {
+  border-style: dashed;
+}
